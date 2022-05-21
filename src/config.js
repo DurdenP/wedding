@@ -12,12 +12,12 @@ export default {
     googleMapAPIKey: 'AIzaSyDSjYdBUN_NDRJQShxs0ugvMBV2goZvT2o',
     comment: {
       livere: {
-        enable: true, // if false, not rendering livere comment component
+        enable: false, // if false, not rendering livere comment component
         service: 'city',
         uid: 'MTAyMC8yNTYzNi8yMjMy',
       },
       facebook: {
-        enable: false, // if false, not rendering facebook comment component
+        enable: true, // if false, not rendering facebook comment component
         appId: '1535680996513864',
       },
     },
@@ -25,30 +25,30 @@ export default {
   title: 'Wedding Invitation', // recomanded English
   wedding: {
     place: {
-      name: '예쁜 예식장 3F 아름다운홀',
-      address: '서울 영등포구 여의도동 60 63빌딩',
-      latitude: 37.51990006878117,
-      longitude: 126.94020220536675,
+      name: 'Parco Chiaramontano',
+      address: 'Via Circonvallazione, 44A, 92010 Siculiana AG, Italy',
+      latitude: 37.33882187166443,
+      longitude: 13.41998828157326,
     },
-    at: '2018-01-27 12:00',
+    at: '2022-08-29 16:00',
   },
   bridal: {
-    name: '신사동',
-    image: require('./Image/bridal.jpeg'),
+    name: 'Sofia',
+    image: require('./Image/bridal1.jpeg'),
     phone: '+821011111111',
     facebook: false, // if false, not showing facebook icon
-    father: '서울시',
-    mother: '강남구',
-    position: '장남',
+    father: '',
+    mother: '',
+    position: '',
   },
   groom: {
-    name: '역곡동',
-    image: require('./Image/groom.jpeg'),
+    name: 'Davide',
+    image: require('./Image/groom1.jpeg'),
     phone: '+821022222222',
     facebook: 'https://www.facebook.com/luckyyowu',
-    father: '부천시',
-    mother: '원미구',
-    position: '차녀',
+    father: '',
+    mother: '',
+    position: '',
   },
   image: {
     header: require('./Image/header.jpg'),
