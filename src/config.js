@@ -12,7 +12,7 @@ export default {
         uid: 'MTAyMC8yNTYzNi8yMjMy',
       },
       facebook: {
-        enable: true, // if false, not rendering facebook comment component
+        enable: false, // if false, not rendering facebook comment component
         appId: '1535680996513864',
       },
     },
