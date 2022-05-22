@@ -36,7 +36,7 @@ export default function Header(props) {
               &nbsp;{bridal.name}
             </h3>
             <p className="lead pt-3">{moment(wedding.at, 'YYYY-MM-DD HH:mm').format('LLLL')}</p>
-            <p className="lead">{wedding.place.name}</p>
+            <p className="lead">{`${wedding.church.name} - ${wedding.place.name}`}</p>
           </Col>
         </Row>
       </Col>
