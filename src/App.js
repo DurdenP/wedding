@@ -20,8 +20,7 @@ export default function App() {
             renders the first one that matches the current URL. */}
                   <Switch>
                       <Route
-                          exact
-                          path="/"
+                          path="/wedding"
                           render={(props) =>
                               isAuth ? (
                                   <Homepage {...props} setIsAuth={setIsAuth} />
@@ -31,13 +30,12 @@ export default function App() {
                           }
                       />
                       <Route
-                          exact
                           path="/password"
                           render={(props) =>
                               !isAuth ? (
                                   <Password {...props} setIsAuth={setIsAuth} />
                               ) : (
-                                  <Redirect to="/" />
+                                  <Redirect to="/wedding" />
                               )
                           }
                       />

@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 
 export default function Password(props) {
 
+    const {setIsAuth} = props
     const [password, setPassword] = useState("")
 
     function handleSubmit() {
@@ -12,7 +13,12 @@ export default function Password(props) {
                 body: JSON.stringify({ value: password })
             };
             fetch('https://wedding-auth.herokuapp.com/auth', requestOptions)
-                .then(response => console.log(response.status))
+                .then(response => {
+                    if(response.status === 201){
+                        console.log('ok')
+                        setIsAuth(true)
+                    }
+                })
         }
     }
 
