@@ -1,21 +1,48 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
-  Container,
-} from 'reactstrap';
-// import logo from './logo.svg';
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Redirect
+} from "react-router-dom";
+
 import './App.css';
-import Screen from './Screen';
-import config from './config';
+import Homepage from "./Screen/Homepage";
+import Password from "./Screen/Password";
 
 export default function App() {
-  return (
-    <Container className="app">
-      <Screen.Header config={config} />
-      <Screen.Profile config={config} />
-      <Screen.Gallery config={config} />
-      <Screen.Place config={config} />
-      <Screen.Comment config={config} />
-      <Screen.Footer />
-    </Container>
-  );
+    const [isAuth, setIsAuth] = useState(false);
+
+      return (
+          <Router>
+              <div>
+                  {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+                  <Switch>
+                      <Route
+                          exact
+                          path="/"
+                          render={(props) =>
+                              isAuth ? (
+                                  <Homepage {...props} setIsAuth={setIsAuth} />
+                              ) : (
+                                  <Redirect to="/password" />
+                              )
+                          }
+                      />
+                      <Route
+                          exact
+                          path="/password"
+                          render={(props) =>
+                              !isAuth ? (
+                                  <Password {...props} setIsAuth={setIsAuth} />
+                              ) : (
+                                  <Redirect to="/" />
+                              )
+                          }
+                      />
+                  </Switch>
+              </div>
+          </Router>
+      );
 }
