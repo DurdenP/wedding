@@ -8,10 +8,18 @@ import {
 export default function Gallery(props) {
   const { image } = props.config;
   return (
-    <Row className="mb-5">
-      <Col>
-        <ImageGallery items={image.gallery} />
-      </Col>
-    </Row>
+      <div>
+          <Row className="mb-5">
+              <Col>
+                  <h4>Foto</h4>
+              </Col>
+          </Row>
+          <Row className="mb-5">
+              <Col>
+                  <ImageGallery items={image.gallery} />
+              </Col>
+          </Row>
+      </div>
+
   );
 }
