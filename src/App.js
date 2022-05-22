@@ -11,7 +11,7 @@ import Homepage from "./Screen/Homepage";
 import Password from "./Screen/Password";
 
 export default function App() {
-    const [isAuth, setIsAuth] = useState(true);
+    const [isAuth, setIsAuth] = useState(false);
 
       return (
           <Router>
