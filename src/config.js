@@ -22,13 +22,19 @@ export default {
       },
     },
   },
-  title: 'Wedding Invitation', // recomanded English
+  title: '',
   wedding: {
-    place: {
-      name: 'Parco Chiaramontano',
+    church: {
+      name: 'Chiesa del Carmine',
       address: 'Via Circonvallazione, 44A, 92010 Siculiana AG, Italy',
       latitude: 37.33882187166443,
       longitude: 13.41998828157326,
+    },
+    place: {
+      name: 'Parco Chiaramontano',
+      address: 'Via Giovanni Amendola, 1, 92027 Licata AG, Italy',
+      latitude: 37.104400122563746,
+      longitude: 13.936244398132272,
     },
     at: '2022-08-29 16:00',
   },
@@ -43,7 +49,7 @@ export default {
   },
   groom: {
     name: 'Davide',
-    image: require('./Image/groom1.jpeg'),
+    image: require('./Image/davide_sofia.jpeg'),
     phone: '+821022222222',
     facebook: 'https://www.facebook.com/luckyyowu',
     father: '',

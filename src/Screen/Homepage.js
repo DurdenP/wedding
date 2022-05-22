@@ -11,6 +11,7 @@ export default function Homepage() {
             <Screen.Profile config={config} />
             <Screen.Gallery config={config} />
             <Screen.Place config={config} />
+            <Screen.Church config={config} />
             <Screen.Comment config={config} />
             <Screen.Footer />
         </Container>

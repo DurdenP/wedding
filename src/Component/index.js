@@ -1,11 +1,11 @@
 import ProfileCard from './ProfileCard';
-import Map from './Map';
+import ChurchMap from './Map';
 import LivereComment from './LivereComment';
 import FacebookComment from './FacebookComment';
 
 export {
   ProfileCard,
-  Map,
+  ChurchMap,
   LivereComment,
   FacebookComment,
 };

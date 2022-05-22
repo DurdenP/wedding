@@ -12,9 +12,9 @@ export default function Profile(props) {
         <Col>
             <ProfileCard profile={groom} />
         </Col>
-      <Col>
-        <ProfileCard profile={bridal} />
-      </Col>
+      {/*<Col>*/}
+      {/*  <ProfileCard profile={bridal} />*/}
+      {/*</Col>*/}
     </Row>
   );
 }

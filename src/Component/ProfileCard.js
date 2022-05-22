@@ -9,10 +9,7 @@ export default function ProfileCard(props) {
     name,
     image,
     phone,
-    facebook,
-    father,
-    mother,
-    position,
+    facebook
   } = props.profile;
   return (
     <Row>
@@ -22,23 +19,23 @@ export default function ProfileCard(props) {
             <img className="img-fluid rounded-circle profile-image" src={image} alt={`${name}`} />
           </Col>
         </Row>
-        <Row className="pt-4">
-          <Col>
-            <h4>{name}</h4>
-          </Col>
-        </Row>
+        {/*<Row className="pt-4">*/}
+        {/*  <Col>*/}
+        {/*    <h4>{name}</h4>*/}
+        {/*  </Col>*/}
+        {/*</Row>*/}
         <Row className="pt-2">
-          <Col>
-            <a className="btn btn-secondary m-1" role="button" href={`tel:${phone}`}>
-              <FontAwesome name="phone" />
-            </a>
-            <a className="btn btn-secondary m-1" role="button" href={`sms:${phone}`}>
-              <FontAwesome name="envelope" />
-            </a>
-            { facebook
-              ? <a className="btn btn-secondary m-1" role="button" href={facebook} target="_blank"><FontAwesome name="facebook-square" /></a>
-              : '' }
-          </Col>
+          {/*<Col>*/}
+          {/*  <a className="btn btn-secondary m-1" role="button" href={`tel:${phone}`}>*/}
+          {/*    <FontAwesome name="phone" />*/}
+          {/*  </a>*/}
+          {/*  <a className="btn btn-secondary m-1" role="button" href={`sms:${phone}`}>*/}
+          {/*    <FontAwesome name="envelope" />*/}
+          {/*  </a>*/}
+          {/*  { facebook*/}
+          {/*    ? <a className="btn btn-secondary m-1" role="button" href={facebook} target="_blank"><FontAwesome name="facebook-square" /></a>*/}
+          {/*    : '' }*/}
+          {/*</Col>*/}
         </Row>
       </Col>
     </Row>
