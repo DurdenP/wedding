@@ -3,7 +3,6 @@ import React from 'react';
 import {Container} from "reactstrap";
 import Screen from "./index";
 import config from "../config";
-
 export default function Homepage() {
     return (
         <Container className="app">

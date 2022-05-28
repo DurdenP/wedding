@@ -2,8 +2,6 @@ import React from 'react';
 import {
   Row, Col,
 } from 'reactstrap';
-
-import { ChurchMap } from '../Component';
 import AvenueMap from "../Component/ChurchMap";
 
 export default function Avenue(props) {

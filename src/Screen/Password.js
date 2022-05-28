@@ -1,11 +1,16 @@
 import React, {useEffect, useState} from 'react';
+import './Password.css'
 
 export default function Password(props) {
 
     const {setIsAuth} = props
+    const [errorMessage, setErrorMessage] = useState('');
+
     const [password, setPassword] = useState("")
 
-    function handleSubmit() {
+    function handleSubmit(event) {
+        event.preventDefault();
+        setErrorMessage('')
         if(password){
             const requestOptions = {
                 method: 'POST',
@@ -17,26 +22,35 @@ export default function Password(props) {
                     if(response.status === 201){
                         console.log('ok')
                         setIsAuth(true)
+                    } else {
+                        setErrorMessage('invalid password');
                     }
                 })
         }
     }
 
-    return (
-        <div
-            style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                height: '100vh',
-            }}
-        >
-            <div>
-                <input type="text" placeholder="password" name="password" onChange={e =>setPassword(e.target.value)}/>
-                <div>
-                    <input type="button" value="Submit" onClick={()=>handleSubmit()}/>
-                </div>
+    const renderForm = (
+        <div className="login">
+            <div className="form">
+                <form onSubmit={handleSubmit}>
+                    <div className="input-container">
+                        <label>Password </label>
+                        <input type="password" name="pass" required onChange={(e)=>setPassword(e.target.value)}/>
+                        {errorMessage && <div className="error">{errorMessage}</div>}
+                    </div>
+                    <div className="button-container">
+                        <input type="submit" />
+                    </div>
+                </form>
+            </div>
+        </div>
 
+    );
+
+    return (
+        <div className="app">
+            <div className="login-form">
+                { renderForm}
             </div>
         </div>
     );

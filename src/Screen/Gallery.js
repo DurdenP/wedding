@@ -5,6 +5,8 @@ import {
   Col,
 } from 'reactstrap';
 
+// import "./image.css"
+
 export default function Gallery(props) {
   const { image } = props.config;
   return (
@@ -16,7 +18,7 @@ export default function Gallery(props) {
           </Row>
           <Row className="mb-5">
               <Col>
-                  <ImageGallery items={image.gallery} />
+                  <ImageGallery items={image.gallery} showIndex={true}/>
               </Col>
           </Row>
       </div>
