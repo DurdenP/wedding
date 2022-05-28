@@ -5,12 +5,11 @@ import {
   Col,
 } from 'reactstrap';
 import FontAwesome from 'react-fontawesome';
-
 import 'moment/locale/it';
 
 export default function Header(props) {
   const {
-    bridal, groom, image, wedding, title,
+    image, wedding,
   } = props.config;
   moment.locale('ita');
   return (
@@ -26,15 +25,6 @@ export default function Header(props) {
         </Row>
         <Row>
           <Col className="pt-5">
-            {/*<h3>*/}
-            {/*  {groom.name}&nbsp;*/}
-            {/*  <small>*/}
-            {/*    <span className="text-middle" style={{ color: 'red' }}>*/}
-            {/*      <FontAwesome name="heart" />*/}
-            {/*    </span>*/}
-            {/*  </small>*/}
-            {/*  &nbsp;{bridal.name}*/}
-            {/*</h3>*/}
             <p className="lead pt-3">{moment(wedding.at, 'YYYY-MM-DD HH:mm').format('LLLL')}</p>
             <p className="lead">{`${wedding.church.name} - ${wedding.place.name}`}</p>
           </Col>

@@ -14,13 +14,14 @@
     "gh-pages": "^1.1.0",
     "moment": "^2.19.4",
     "react": "^17.0.2",
+    "react-countdown-circle-timer": "^3.0.9",
     "react-dom": "^17.0.2",
     "react-fontawesome": "^1.6.1",
     "react-google-maps": "^9.4.2",
     "react-helmet": "^5.2.0",
     "react-image-gallery": "^0.8.6",
     "react-router-dom": "^5.3.3",
-    "react-scripts": "1.0.17",
+    "react-scripts": "2.1.8",
     "reactstrap": "^5.0.0-alpha.4"
   },
   "scripts": {
@@ -32,10 +33,15 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "eslint": "^4.13.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

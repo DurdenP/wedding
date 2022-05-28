@@ -3,18 +3,12 @@ import {
   Row, Col,
 } from 'reactstrap';
 
-import { ProfileCard } from '../Component';
+import Countdown from "../Component/Countdown";
 
 export default function Profile(props) {
-  const { bridal, groom } = props.config;
   return (
-    <Row className="mt-3 mb-5">
-        {/*<Col>*/}
-        {/*    <ProfileCard profile={groom} />*/}
-        {/*</Col>*/}
-      {/*<Col>*/}
-      {/*  <ProfileCard profile={bridal} />*/}
-      {/*</Col>*/}
+    <Row className="mt-3 mb-5" style={{display: 'flex',  justifyContent:'center', alignItems:'center'}}>
+        <Countdown />
     </Row>
   );
 }

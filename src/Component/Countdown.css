@@ -1,0 +1,12 @@
+.Countdown {
+    display: flex;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    font-size: 32px;
+}
