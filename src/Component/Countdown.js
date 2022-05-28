@@ -6,10 +6,13 @@ const minuteSeconds = 60;
 const hourSeconds = 3600;
 const daySeconds = 86400;
 
+
+const size = window.screen.width >= 1280 ? 170 : 100
+
 const timerProps = {
     isPlaying: true,
-    size: 120,
-    strokeWidth: 6
+    size,
+    strokeWidth: 7
 };
 
 const renderTime = (dimension, time) => {
