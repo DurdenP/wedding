@@ -12,13 +12,10 @@ import {
 import config from '../config';
 
 const GenerateGoogleMap = withScriptjs(withGoogleMap((props) => {
-  console.log(props.settings)
   const {
     latitude, longitude, address,
   } = props.settings;
 
-  console.log(latitude)
-  console.log(longitude)
   return (
       <div>
         {

@@ -20,10 +20,9 @@ export default function Password(props) {
             fetch('https://wedding-auth.herokuapp.com/auth', requestOptions)
                 .then(response => {
                     if(response.status === 201){
-                        console.log('ok')
                         setIsAuth(true)
                     } else {
-                        setErrorMessage('invalid password');
+                        setErrorMessage('Invalid password');
                     }
                 })
         }
