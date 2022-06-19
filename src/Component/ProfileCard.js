@@ -2,14 +2,11 @@ import React from 'react';
 import {
   Row, Col,
 } from 'reactstrap';
-import FontAwesome from 'react-fontawesome';
 
 export default function ProfileCard(props) {
   const {
     name,
-    image,
-    phone,
-    facebook
+    image
   } = props.profile;
   return (
     <Row>

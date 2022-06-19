@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  Row, Col,
+  Row,
 } from 'reactstrap';
 
 import Countdown from "../Component/Countdown";

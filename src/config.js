@@ -1,5 +1,6 @@
 const gallery = [ // galley image list
-  require('./Image/coming-soon.webp'),
+  require('./Image/gallery/in1.jpeg'),
+  require('./Image/gallery/in2.jpeg'),
 ];
 
 export default {
